@@ -16,7 +16,7 @@ public interface IContactsMasterRepository extends JpaRepository<ContactsMasterE
 
 	Optional<ContactsMasterEntity> findByContactNameOrContactNumber(String contactName, Long contactNumber);
 
-//	List<ContactsMasterEntity> findByContactStatusOrderByContactNameDesc(Integer status);
+	List<ContactsMasterEntity> findByContactStatusOrderByContactNameDesc(Integer status);
 
 	List<ContactsMasterEntity> findByContactStatusOrderByContactNameDesc(Integer contactStatus);
 
